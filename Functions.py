@@ -1,10 +1,13 @@
 import tkinter as tk
 from PIL import ImageTk
 import sqlite3
+import main
 
+bg_colour = "#FBE870"
+button_colour = "#1f5b22"
 
 def open_enter_window():
-    enter_Window = tk.Toplevel(root)
+    enter_Window = tk.Toplevel(main.root)
     enter_Window.title("Enter new Recipes")
     
     frame_eW1 = tk.Frame(enter_Window, width=400, height=600,bg=bg_colour)
