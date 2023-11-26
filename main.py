@@ -3,6 +3,7 @@ from PIL import ImageTk
 import sqlite3
 from numpy import random
 import Functions
+import Database
 
 bg_colour = "#FBE870"
 button_colour = "#1f5b22"

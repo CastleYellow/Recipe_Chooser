@@ -18,7 +18,7 @@ def open_enter_window():
                            font=("TkHeadingFont", 15),
                            fg="black",
                            bg=bg_colour
-                           ).grid(row=0, column=0, pady=15)
+                           ).grid(row=0, column=0, pady=15, columnspan=2)
 
     label_recipe = tk.Label(frame_eW1,
                             text="Recipe Name:",
@@ -66,6 +66,44 @@ def open_enter_window():
                             fg="black",
                             bg=bg_colour).grid(row=9, column=0, padx=5,pady=5, sticky="W")
 
+    
+    entry_recipe = tk.Entry(frame_eW1,
+                            font=("TkMenuFont", 10),
+                            fg="black",
+                            borderwidth=3).grid(row=1, column=1, sticky="W")
+    entry_ingredient1 = tk.Entry(frame_eW1,
+                            font=("TkMenuFont", 10),
+                            fg="black",
+                            borderwidth=3).grid(row=2, column=1, sticky="W")
+    entry_ingredient2 = tk.Entry(frame_eW1,
+                            font=("TkMenuFont", 10),
+                            fg="black",
+                            borderwidth=3).grid(row=3, column=1, sticky="W")
+    entry_ingredient3 = tk.Entry(frame_eW1,
+                            font=("TkMenuFont", 10),
+                            fg="black",
+                            borderwidth=3).grid(row=4, column=1, sticky="W")
+    entry_ingredient4 = tk.Entry(frame_eW1,
+                            font=("TkMenuFont", 10),
+                            fg="black",
+                            borderwidth=3).grid(row=5, column=1, sticky="W")
+    entry_ingredient5 = tk.Entry(frame_eW1,
+                            font=("TkMenuFont", 10),
+                            fg="black",
+                            borderwidth=3).grid(row=6, column=1, sticky="W")
+    entry_ingredient6 = tk.Entry(frame_eW1,
+                            font=("TkMenuFont", 10),
+                            fg="black",
+                            borderwidth=3).grid(row=7, column=1, sticky="W")
+    entry_recipe_book = tk.Entry(frame_eW1,
+                            font=("TkMenuFont", 10),
+                            fg="black",
+                            borderwidth=3).grid(row=8, column=1, sticky="W")
+    entry_recipe_link = tk.Entry(frame_eW1,
+                            font=("TkMenuFont", 10),
+                            fg="black",
+                            borderwidth=3).grid(row=9, column=1, sticky="W")
+    
     button_save_recipe = tk.Button(
         frame_eW1,
         text="SAVE RECIPE",
